@@ -3,36 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="TecnoCiclo — campanha de conscientização sobre sustentabilidade tecnológica.">
-  <title>TecnoCiclo | Tecnologia que continua</title>
+  <meta name="description" content="TecnoCiclo — Campanha de conscientização sobre sustentabilidade e descarte correto de lixo eletrônico.">
+  <title>TecnoCiclo | Campanha de Sustentabilidade Tecnológica</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+  <!-- NAVEGAÇÃO FIXA -->
   <header class="header">
     <nav class="nav">
       <a class="brand" href="#inicio"><span>TC</span> TecnoCiclo</a>
       <button class="menu-toggle" aria-label="Abrir menu">☰</button>
       <div class="nav-links">
-        <a href="#problema">O problema</a>
-        <a href="#ciclo">O ciclo</a>
-        <a href="#atitudes">Atitudes</a>
-        <a href="#desafio">Desafio</a>
+        <a href="#inicio">Início</a>
+        <a href="#impactos">Impactos</a>
+        <a href="#reaproveitamento">Reaproveitamento</a>
+        <a href="#reciclagem">Reciclagem</a>
+        <a href="#conscientizacao">Conscientização</a>
+        <a href="#sustentabilidade">Sustentabilidade</a>
       </div>
     </nav>
   </header>
 
   <main>
+    <!-- 1. PÁGINA INICIAL -->
     <section class="hero" id="inicio">
-      <div class="hero-content">
+      <div class="hero-content fade-in">
         <div class="eyebrow"><i></i> CAMPANHA DE CONSCIENTIZAÇÃO</div>
-        <h1>E se a tecnologia<br><em>tivesse uma segunda vida?</em></h1>
-        <p class="hero-text">Seu aparelho não precisa terminar na gaveta ou no lixo. Use melhor, cuide mais e descubra como fazer a tecnologia continuar.</p>
+        <h1>TecnoCiclo:<br><em>Tecnologia que continua.</em></h1>
+        <p class="hero-text">Uma iniciativa dedicada à promoção da sustentabilidade digital e ao consumo consciente de eletrônicos no nosso dia a dia.</p>
+        <p class="hero-quote">"O descarte de hoje é o impacto de amanhã. Faça a tecnologia continuar com responsabilidade."</p>
         <div class="hero-actions">
-          <a class="button primary" href="#ciclo">Conhecer o ciclo <span>→</span></a>
-          <a class="button ghost" href="#desafio">Fazer o desafio</a>
+          <a class="button primary" href="#impactos">Conheça a campanha <span>↓</span></a>
         </div>
       </div>
-      <div class="device-art" aria-label="Ilustração de tecnologia e natureza">
+      <div class="device-art fade-in" aria-label="Ilustração de tecnologia e natureza">
         <div class="orb orb-one"></div>
         <div class="orb orb-two"></div>
         <div class="phone">
@@ -40,110 +45,231 @@
             <div class="screen-top"><span>09:41</span><span>● ● ●</span></div>
             <div class="leaf">⌁</div>
             <strong>TECNO<br>CICLO</strong>
-            <small>USE • CUIDE • REAPROVEITE</small>
+            <small>REDUZA • REUSE • RECICLE</small>
           </div>
         </div>
-        <div class="eco-badge">↻ <span>tecnologia<br>em movimento</span></div>
+        <div class="eco-badge">↻ <span>Ciclo<br>Sustentável</span></div>
       </div>
     </section>
 
-    <section class="stats">
-      <div><strong>01</strong><span>Repensar antes<br>de comprar</span></div>
-      <div><strong>02</strong><span>Aumentar a vida<br>útil</span></div>
-      <div><strong>03</strong><span>Destinar<br>corretamente</span></div>
-    </section>
-
-    <section class="section" id="problema">
-      <div class="section-heading">
+    <!-- 2. LIXO ELETRÔNICO – IMPACTOS DO DESCARTE INADEQUADO -->
+    <section class="section" id="impactos">
+      <div class="section-heading fade-in">
         <div>
-          <div class="eyebrow">POR QUE ISSO IMPORTA?</div>
-          <h2>O problema começa quando<br><em>a gente para de pensar.</em></h2>
+          <div class="eyebrow">DIAGNÓSTICO AMBIENTAL</div>
+          <h2>Lixo Eletrônico –<br><em>Impactos do Descarte Inadequado</em></h2>
         </div>
-        <p>Celulares, computadores, cabos e outros eletrônicos fazem parte da nossa rotina. A forma como consumimos, usamos e descartamos esses equipamentos também faz parte da sustentabilidade.</p>
+        <p>O Lixo Eletrônico (ou e-waste) engloba todos os equipamentos eletroeletrônicos descartados ao fim de sua vida útil sem o devido tratamento técnico.</p>
       </div>
 
       <div class="impact-grid">
-        <article class="impact featured">
+        <article class="impact card-animate">
           <span class="number">01</span>
-          <div class="icon">◌</div>
-          <h3>Trocar nem sempre é a única opção.</h3>
-          <p>Antes de comprar outro aparelho, veja se manutenção, atualização ou reaproveitamento podem resolver.</p>
+          <div class="icon">📱</div>
+          <h3>Exemplos Comuns</h3>
+          <p>Celulares, computadores, cabos, carregadores, baterias, placas de circuito, eletrodomésticos e monitores em desuso.</p>
         </article>
-        <article class="impact">
+        <article class="impact card-animate">
           <span class="number">02</span>
-          <div class="icon">+</div>
-          <h3>Um aparelho pode continuar útil.</h3>
-          <p>O que não serve mais para você pode ter utilidade para outra pessoa.</p>
+          <div class="icon">⚠️</div>
+          <h3>Descarte Incorreto</h3>
+          <p>Quando jogados no lixo comum ou em lixões, esses resíduos sofrem degradação física e contaminam o solo e lençóis freáticos.</p>
         </article>
-        <article class="impact">
+        <article class="impact card-animate">
           <span class="number">03</span>
-          <div class="icon">↗</div>
-          <h3>Descarte exige informação.</h3>
-          <p>Eletrônicos não devem ser tratados automaticamente como lixo comum. Procure uma destinação adequada.</p>
+          <div class="icon">☣️</div>
+          <h3>Impactos Ambientais</h3>
+          <p>Vazamento de metais pesados como chumbo, mercúrio e cádmio, afetando a fauna, a flora e a saúde pública.</p>
         </article>
       </div>
     </section>
 
-    <section class="cycle-section" id="ciclo">
-      <div class="section narrow">
-        <div class="eyebrow">O TECNOCICLO</div>
-        <h2>Faça a tecnologia<br><em>continuar.</em></h2>
-        <p class="section-lead">A proposta é simples: tirar a tecnologia de uma lógica de “comprar e jogar fora” e colocar o cuidado no centro.</p>
-        <div class="cycle">
-          <div class="cycle-item active"><span>01</span><b>REPENSAR</b><small>Preciso mesmo trocar?</small></div>
-          <div class="cycle-arrow">→</div>
-          <div class="cycle-item"><span>02</span><b>CUIDAR</b><small>Como posso conservar?</small></div>
-          <div class="cycle-arrow">→</div>
-          <div class="cycle-item"><span>03</span><b>REUSAR</b><small>Alguém pode aproveitar?</small></div>
-          <div class="cycle-arrow">→</div>
-          <div class="cycle-item"><span>04</span><b>DESTINAR</b><small>Onde descartar?</small></div>
+    <!-- 3. REAPROVEITAMENTO SUSTENTÁVEL -->
+    <section class="section alt-bg" id="reaproveitamento">
+      <div class="section-heading fade-in">
+        <div>
+          <div class="eyebrow">ALTERNATIVA AO DESCARTE</div>
+          <h2>Reaproveitamento<br><em>Sustentável</em></h2>
+        </div>
+        <p>Antes de descartar qualquer equipamento, devemos avaliar alternativas para estender seu ciclo de vida e evitar a geração precoce de resíduos.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="interactive-card card-animate">
+          <div class="card-icon">🔄</div>
+          <h3>Ser Reutilizado / Doado</h3>
+          <p>Aparelhos em bom estado podem ser repassados para instituições de ensino, ONGs ou pessoas que necessitam.</p>
+        </article>
+        <article class="interactive-card card-animate">
+          <div class="card-icon">🛠️</div>
+          <h3>Ser Consertado</h3>
+          <p>Manutenção preventiva, substituição de bateria ou troca de componentes prolongam a vida útil do dispositivo.</p>
+        </article>
+        <article class="interactive-card card-animate">
+          <div class="card-icon">🧩</div>
+          <h3>Peças Reaproveitadas</h3>
+          <p>Componentes internos funcionais, como memórias e HDs, podem virar peças de reposição para outros sistemas.</p>
+        </article>
+        <article class="interactive-card card-animate">
+          <div class="card-icon">💡</div>
+          <h3>Outra Utilização</h3>
+          <p>Transformação de smartphones antigos em câmeras de segurança, leitores digitais ou servidores domésticos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. RECICLAGEM E LOGÍSTICA REVERSA -->
+    <section class="section" id="reciclagem">
+      <div class="section-heading fade-in">
+        <div>
+          <div class="eyebrow">PROCESSO TÉCNICO</div>
+          <h2>Reciclagem e<br><em>Logística Reversa</em></h2>
+        </div>
+        <p>A <strong>Reciclagem de Eletrônicos</strong> recupera matérias-primas valiosas (como ouro, cobre e plástico), enquanto a <strong>Logística Reversa</strong> garante que os produtos retornem ao ciclo produtivo com segurança ambiental.</p>
+      </div>
+
+      <!-- Fluxo Visual do Processo -->
+      <div class="flow-container fade-in">
+        <h3 class="flow-title">Fluxo de Destinação Adequada</h3>
+        <div class="flow-steps">
+          <div class="flow-step">
+            <span class="step-num">1</span>
+            <strong>Uso do Produto</strong>
+            <small>Utilização consciente</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="step-num">2</span>
+            <strong>Descarte Correto</strong>
+            <small>Separação pelo usuário</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="step-num">3</span>
+            <strong>Ponto de Coleta</strong>
+            <small>Entrega no PEV</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="step-num">4</span>
+            <strong>Triagem</strong>
+            <small>Separação de materiais</small>
+          </div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-step">
+            <span class="step-num">5</span>
+            <strong>Reciclagem / Reaproveitamento</strong>
+            <small>Retorno à indústria</small>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="atitudes">
-      <div class="eyebrow">ATITUDES PRÁTICAS</div>
-      <h2>Comece pelo que<br><em>está ao seu alcance.</em></h2>
-      <div class="tips">
-        <article><span>01</span><h3>Proteja seus aparelhos</h3><p>Evite quedas, calor excessivo, líquidos e acessórios inadequados.</p></article>
-        <article><span>02</span><h3>Faça manutenção</h3><p>Limpeza, organização e pequenos reparos podem prolongar o uso.</p></article>
-        <article><span>03</span><h3>Reaproveite</h3><p>Doe, venda ou encontre uma nova função para o equipamento.</p></article>
-        <article><span>04</span><h3>Descarte com cuidado</h3><p>Antes de entregar, faça backup e remova seus dados. Depois, procure coleta adequada.</p></article>
+    <!-- 5. CONSCIENTIZAÇÃO -->
+    <section class="section alt-bg" id="conscientizacao">
+      <div class="section-heading fade-in">
+        <div>
+          <div class="eyebrow">ENGANJAMENTO</div>
+          <h2>Conscientização:<br><em>Pequenas Atitudes</em></h2>
+        </div>
+        <p>A mudança real depende de ações diárias e do engajamento de toda a comunidade.</p>
+      </div>
+
+      <div class="tips-grid">
+        <article class="tip-card card-animate">
+          <span>01</span>
+          <h3>Lixo Comum Jamais</h3>
+          <p>Nunca jogue eletrônicos, pilhas ou cabos na coleta doméstica tradicional.</p>
+        </article>
+        <article class="tip-card card-animate">
+          <span>02</span>
+          <h3>Pontos de Coleta (PEVs)</h3>
+          <p>Procure postos de coleta especializada em sua cidade ou em lojas do varejo.</p>
+        </article>
+        <article class="tip-card card-animate">
+          <span>03</span>
+          <h3>Conserte Antes de Trocar</h3>
+          <p>Avalie se um pequeno reparo não devolve o funcionamento original do equipamento.</p>
+        </article>
+        <article class="tip-card card-animate">
+          <span>04</span>
+          <h3>Doe Eletrônicos Úteis</h3>
+          <p>Se o aparelho ainda funciona, passe adiante para quem precisa.</p>
+        </article>
+        <article class="tip-card card-animate">
+          <span>05</span>
+          <h3>Separe Pilhas e Baterias</h3>
+          <p>Deposite pilhas e baterias em coletores específicos para resíduos perigosos.</p>
+        </article>
+        <article class="tip-card card-animate">
+          <span>06</span>
+          <h3>Compartilhe Informação</h3>
+          <p>Multiplique a mensagem sobre o descarte responsável em sua comunidade.</p>
+        </article>
+      </div>
+
+      <div class="callout fade-in">
+        <p class="callout-text">"Uma escolha consciente começa antes do descarte."</p>
+        <a class="button primary" href="#sustentabilidade">Quero fazer minha parte <span>→</span></a>
+      </div>
+
+      <!-- Quiz preservado da identidade original -->
+      <div class="challenge" id="desafio">
+        <div class="challenge-copy fade-in">
+          <div class="eyebrow">DESAFIO TECNOCICLO</div>
+          <h2>Que tipo de usuário<br><em>você é?</em></h2>
+          <p>Responda rápido para descobrir como suas escolhas impactam o meio ambiente.</p>
+        </div>
+        <form id="quiz" class="quiz fade-in">
+          <label>Seu celular está lento. Você...
+            <select required><option value="">Escolha uma opção</option><option value="0">Troca logo por outro</option><option value="1">Tenta entender e resolver o problema</option></select>
+          </label>
+          <label>Você tem um eletrônico parado em casa. Você...
+            <select required><option value="">Escolha uma opção</option><option value="0">Deixa guardado sem pensar muito</option><option value="1">Procura reaproveitar ou passar para alguém</option></select>
+          </label>
+          <label>Na hora de descartar um eletrônico, você...
+            <select required><option value="">Escolha uma opção</option><option value="0">Coloca junto com o lixo comum</option><option value="1">Procura um local de coleta adequado</option></select>
+          </label>
+          <button class="button primary" type="submit">Ver meu resultado <span>→</span></button>
+          <div id="result" class="result" aria-live="polite"></div>
+        </form>
       </div>
     </section>
 
-    <section class="challenge" id="desafio">
-      <div class="challenge-copy">
-        <div class="eyebrow">DESAFIO TECNOCICLO</div>
-        <h2>Que tipo de usuário<br><em>você é?</em></h2>
-        <p>Escolha as atitudes que mais combinam com você. No final, descubra seu perfil.</p>
+    <!-- 6. SUSTENTABILIDADE -->
+    <section class="section" id="sustentabilidade">
+      <div class="section-heading fade-in">
+        <div>
+          <div class="eyebrow">FECHAMENTO DA CAMPANHA</div>
+          <h2>Sustentabilidade<br><em>no Ciclo Digital</em></h2>
+        </div>
+        <p>A união entre avanço tecnológico e responsabilidade ambiental forma a base da verdadeira sustentabilidade.</p>
       </div>
-      <form id="quiz" class="quiz">
-        <label>Seu celular está lento. Você...
-          <select required><option value="">Escolha uma opção</option><option value="0">Troca logo por outro</option><option value="1">Tenta entender e resolver o problema</option></select>
-        </label>
-        <label>Você tem um eletrônico parado em casa. Você...
-          <select required><option value="">Escolha uma opção</option><option value="0">Deixa guardado sem pensar muito</option><option value="1">Procura reaproveitar ou passar para alguém</option></select>
-        </label>
-        <label>Na hora de descartar um eletrônico, você...
-          <select required><option value="">Escolha uma opção</option><option value="0">Coloca junto com o lixo comum</option><option value="1">Procura um local de coleta adequado</option></select>
-        </label>
-        <button class="button primary" type="submit">Ver meu resultado <span>→</span></button>
-        <div id="result" class="result" aria-live="polite"></div>
-      </form>
-    </section>
 
-    <section class="final-cta">
-      <div class="eyebrow">UMA ESCOLHA DE CADA VEZ</div>
-      <h2>Não precisa mudar tudo.<br><em>Comece por um hábito.</em></h2>
-      <a class="button primary" href="#inicio">Voltar ao início ↑</a>
+      <div class="formula-box fade-in">
+        <div class="formula-item">TECNOLOGIA</div>
+        <div class="formula-plus">+</div>
+        <div class="formula-item">CONSUMO CONSCIENTE</div>
+        <div class="formula-plus">+</div>
+        <div class="formula-item">REAPROVEITAMENTO</div>
+        <div class="formula-plus">+</div>
+        <div class="formula-item">RECICLAGEM</div>
+        <div class="formula-equals">=</div>
+        <div class="formula-result">SUSTENTABILIDADE</div>
+      </div>
+
+      <div class="final-cta fade-in">
+        <p class="final-message">Pequenas atitudes ajudam a construir um futuro mais sustentável. Faça a sua parte no dia a dia!</p>
+        <a class="button primary" href="#inicio">Voltar ao início ↑</a>
+      </div>
     </section>
   </main>
 
   <footer>
-    <div><strong>TecnoCiclo</strong><span>— Tecnologia que continua.</span></div>
-    <small>Projeto Integrador II • Sustentabilidade Tecnológica</small>
+    <div><strong>TecnoCiclo</strong> <span>— Campanha de Sustentabilidade Tecnológica</span></div>
+    <small>Projeto Acadêmico • Engenharia de Software</small>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
