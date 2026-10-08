@@ -9,24 +9,26 @@
 </head>
 <body>
 
-  <!-- NAVEGAÇÃO FIXA -->
+  <!-- NAVEGAÇÃO FIXA E ACESSÍVEL -->
   <header class="header">
-    <nav class="nav">
+    <nav class="nav" aria-label="Navegação Principal">
       <a class="brand" href="#inicio"><span>TC</span> TecnoCiclo</a>
-      <button class="menu-toggle" aria-label="Abrir menu">☰</button>
-      <div class="nav-links">
-        <a href="#inicio">Início</a>
-        <a href="#impactos">Impactos</a>
-        <a href="#reaproveitamento">Reaproveitamento</a>
-        <a href="#reciclagem">Reciclagem</a>
-        <a href="#conscientizacao">Conscientização</a>
-        <a href="#sustentabilidade">Sustentabilidade</a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu de navegação">
+        <span class="hamburger"></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#inicio" class="nav-link">Início</a>
+        <a href="#impactos" class="nav-link">Impactos</a>
+        <a href="#reaproveitamento" class="nav-link">Reaproveitamento</a>
+        <a href="#reciclagem" class="nav-link">Reciclagem</a>
+        <a href="#conscientizacao" class="nav-link">Conscientização</a>
+        <a href="#sustentabilidade" class="nav-link">Sustentabilidade</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- 1. PÁGINA INICIAL -->
+    <!-- 1. HERO / INÍCIO -->
     <section class="hero" id="inicio">
       <div class="hero-content fade-in">
         <div class="eyebrow"><i></i> CAMPANHA DE CONSCIENTIZAÇÃO</div>
@@ -34,10 +36,10 @@
         <p class="hero-text">Uma iniciativa dedicada à promoção da sustentabilidade digital e ao consumo consciente de eletrônicos no nosso dia a dia.</p>
         <p class="hero-quote">"O descarte de hoje é o impacto de amanhã. Faça a tecnologia continuar com responsabilidade."</p>
         <div class="hero-actions">
-          <a class="button primary" href="#impactos">Conheça a campanha <span>↓</span></a>
+          <a class="button primary" href="#impactos">Conheça a campanha <span aria-hidden="true">↓</span></a>
         </div>
       </div>
-      <div class="device-art fade-in" aria-label="Ilustração de tecnologia e natureza">
+      <div class="device-art fade-in" aria-label="Ilustração interativa de tecnologia sustentável">
         <div class="orb orb-one"></div>
         <div class="orb orb-two"></div>
         <div class="phone">
@@ -52,7 +54,7 @@
       </div>
     </section>
 
-    <!-- 2. LIXO ELETRÔNICO – IMPACTOS DO DESCARTE INADEQUADO -->
+    <!-- 2. DIAGNÓSTICO AMBIENTAL / IMPACTOS -->
     <section class="section" id="impactos">
       <div class="section-heading fade-in">
         <div>
@@ -65,19 +67,19 @@
       <div class="impact-grid">
         <article class="impact card-animate">
           <span class="number">01</span>
-          <div class="icon">📱</div>
+          <div class="icon" aria-hidden="true">📱</div>
           <h3>Exemplos Comuns</h3>
           <p>Celulares, computadores, cabos, carregadores, baterias, placas de circuito, eletrodomésticos e monitores em desuso.</p>
         </article>
         <article class="impact card-animate">
           <span class="number">02</span>
-          <div class="icon">⚠️</div>
+          <div class="icon" aria-hidden="true">⚠️</div>
           <h3>Descarte Incorreto</h3>
           <p>Quando jogados no lixo comum ou em lixões, esses resíduos sofrem degradação física e contaminam o solo e lençóis freáticos.</p>
         </article>
         <article class="impact card-animate">
           <span class="number">03</span>
-          <div class="icon">☣️</div>
+          <div class="icon" aria-hidden="true">☣️</div>
           <h3>Impactos Ambientais</h3>
           <p>Vazamento de metais pesados como chumbo, mercúrio e cádmio, afetando a fauna, a flora e a saúde pública.</p>
         </article>
@@ -95,23 +97,23 @@
       </div>
 
       <div class="cards-grid">
-        <article class="interactive-card card-animate">
-          <div class="card-icon">🔄</div>
+        <article class="interactive-card card-animate" tabindex="0">
+          <div class="card-icon" aria-hidden="true">🔄</div>
           <h3>Ser Reutilizado / Doado</h3>
           <p>Aparelhos em bom estado podem ser repassados para instituições de ensino, ONGs ou pessoas que necessitam.</p>
         </article>
-        <article class="interactive-card card-animate">
-          <div class="card-icon">🛠️</div>
+        <article class="interactive-card card-animate" tabindex="0">
+          <div class="card-icon" aria-hidden="true">🛠️</div>
           <h3>Ser Consertado</h3>
           <p>Manutenção preventiva, substituição de bateria ou troca de componentes prolongam a vida útil do dispositivo.</p>
         </article>
-        <article class="interactive-card card-animate">
-          <div class="card-icon">🧩</div>
+        <article class="interactive-card card-animate" tabindex="0">
+          <div class="card-icon" aria-hidden="true">🧩</div>
           <h3>Peças Reaproveitadas</h3>
           <p>Componentes internos funcionais, como memórias e HDs, podem virar peças de reposição para outros sistemas.</p>
         </article>
-        <article class="interactive-card card-animate">
-          <div class="card-icon">💡</div>
+        <article class="interactive-card card-animate" tabindex="0">
+          <div class="card-icon" aria-hidden="true">💡</div>
           <h3>Outra Utilização</h3>
           <p>Transformação de smartphones antigos em câmeras de segurança, leitores digitais ou servidores domésticos.</p>
         </article>
@@ -128,7 +130,6 @@
         <p>A <strong>Reciclagem de Eletrônicos</strong> recupera matérias-primas valiosas (como ouro, cobre e plástico), enquanto a <strong>Logística Reversa</strong> garante que os produtos retornem ao ciclo produtivo com segurança ambiental.</p>
       </div>
 
-      <!-- Fluxo Visual do Processo -->
       <div class="flow-container fade-in">
         <h3 class="flow-title">Fluxo de Destinação Adequada</h3>
         <div class="flow-steps">
@@ -137,25 +138,25 @@
             <strong>Uso do Produto</strong>
             <small>Utilização consciente</small>
           </div>
-          <div class="flow-arrow">→</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
           <div class="flow-step">
             <span class="step-num">2</span>
             <strong>Descarte Correto</strong>
             <small>Separação pelo usuário</small>
           </div>
-          <div class="flow-arrow">→</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
           <div class="flow-step">
             <span class="step-num">3</span>
             <strong>Ponto de Coleta</strong>
             <small>Entrega no PEV</small>
           </div>
-          <div class="flow-arrow">→</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
           <div class="flow-step">
             <span class="step-num">4</span>
             <strong>Triagem</strong>
             <small>Separação de materiais</small>
           </div>
-          <div class="flow-arrow">→</div>
+          <div class="flow-arrow" aria-hidden="true">→</div>
           <div class="flow-step">
             <span class="step-num">5</span>
             <strong>Reciclagem / Reaproveitamento</strong>
@@ -165,7 +166,7 @@
       </div>
     </section>
 
-    <!-- 5. CONSCIENTIZAÇÃO -->
+    <!-- 5. CONSCIENTIZAÇÃO E DESAFIO INTERATIVO -->
     <section class="section alt-bg" id="conscientizacao">
       <div class="section-heading fade-in">
         <div>
@@ -210,27 +211,39 @@
 
       <div class="callout fade-in">
         <p class="callout-text">"Uma escolha consciente começa antes do descarte."</p>
-        <a class="button primary" href="#sustentabilidade">Quero fazer minha parte <span>→</span></a>
+        <a class="button primary" href="#sustentabilidade">Quero fazer minha parte <span aria-hidden="true">→</span></a>
       </div>
 
-      <!-- Quiz preservado da identidade original -->
+      <!-- DESAFIO TECNOCICLO -->
       <div class="challenge" id="desafio">
         <div class="challenge-copy fade-in">
           <div class="eyebrow">DESAFIO TECNOCICLO</div>
           <h2>Que tipo de usuário<br><em>você é?</em></h2>
           <p>Responda rápido para descobrir como suas escolhas impactam o meio ambiente.</p>
         </div>
-        <form id="quiz" class="quiz fade-in">
-          <label>Seu celular está lento. Você...
-            <select required><option value="">Escolha uma opção</option><option value="0">Troca logo por outro</option><option value="1">Tenta entender e resolver o problema</option></select>
+        <form id="quiz" class="quiz fade-in" novalidate>
+          <label for="q1">1. Seu celular está lento. Você...
+            <select id="q1" name="q1" required>
+              <option value="">Escolha uma opção</option>
+              <option value="0">Troca logo por outro</option>
+              <option value="1">Tenta entender e resolver o problema</option>
+            </select>
           </label>
-          <label>Você tem um eletrônico parado em casa. Você...
-            <select required><option value="">Escolha uma opção</option><option value="0">Deixa guardado sem pensar muito</option><option value="1">Procura reaproveitar ou passar para alguém</option></select>
+          <label for="q2">2. Você tem um eletrônico parado em casa. Você...
+            <select id="q2" name="q2" required>
+              <option value="">Escolha uma opção</option>
+              <option value="0">Deixa guardado sem pensar muito</option>
+              <option value="1">Procura reaproveitar ou passar para alguém</option>
+            </select>
           </label>
-          <label>Na hora de descartar um eletrônico, você...
-            <select required><option value="">Escolha uma opção</option><option value="0">Coloca junto com o lixo comum</option><option value="1">Procura um local de coleta adequado</option></select>
+          <label for="q3">3. Na hora de descartar um eletrônico, você...
+            <select id="q3" name="q3" required>
+              <option value="">Escolha uma opção</option>
+              <option value="0">Coloca junto com o lixo comum</option>
+              <option value="1">Procura um local de coleta adequado</option>
+            </select>
           </label>
-          <button class="button primary" type="submit">Ver meu resultado <span>→</span></button>
+          <button class="button primary" type="submit">Ver meu resultado <span aria-hidden="true">→</span></button>
           <div id="result" class="result" aria-live="polite"></div>
         </form>
       </div>
@@ -248,19 +261,19 @@
 
       <div class="formula-box fade-in">
         <div class="formula-item">TECNOLOGIA</div>
-        <div class="formula-plus">+</div>
+        <div class="formula-plus" aria-hidden="true">+</div>
         <div class="formula-item">CONSUMO CONSCIENTE</div>
-        <div class="formula-plus">+</div>
+        <div class="formula-plus" aria-hidden="true">+</div>
         <div class="formula-item">REAPROVEITAMENTO</div>
-        <div class="formula-plus">+</div>
+        <div class="formula-plus" aria-hidden="true">+</div>
         <div class="formula-item">RECICLAGEM</div>
-        <div class="formula-equals">=</div>
+        <div class="formula-equals" aria-hidden="true">=</div>
         <div class="formula-result">SUSTENTABILIDADE</div>
       </div>
 
       <div class="final-cta fade-in">
         <p class="final-message">Pequenas atitudes ajudam a construir um futuro mais sustentável. Faça a sua parte no dia a dia!</p>
-        <a class="button primary" href="#inicio">Voltar ao início ↑</a>
+        <a class="button primary" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a>
       </div>
     </section>
   </main>
